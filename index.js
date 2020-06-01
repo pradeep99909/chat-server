@@ -23,7 +23,7 @@ webpush.setVapidDetails(
 var Auth = require("./auth_function/auth");
 var { Chat } = require("./chat function/chat");
 
-app.post("/get_messages", verifyUser, (req, res) => {
+app.post("/get_messages", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
